@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Game </title>
+    <link rel="stylesheet" href="areyousurestyle.css">
+<style>
+    
+    h1 {
+        text-align: center;
+    }
+    input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: white;
+
+    }
+
+    .no-outline:focus {
+    outline: none;
+    background-color: white;
+    }
+
+</style>
+</head>
+<body>
+
+    <h1> Game is not ready yet.</h1>
+
+    <hr>
+
+
+<input type="text" id="textbox" name="textbox" class="no-outline" placeholder=" ">
+
+    <script>
+      document.getElementById("textbox").addEventListener("input", function() {
+  var textboxValue = this.value;
+  if (textboxValue.toLowerCase() === "password 123") {
+    window.location.href= "realgame.html";
+  }
+});
+
+    </script>
+
+
+</body>
+</html>
