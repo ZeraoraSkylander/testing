@@ -4,11 +4,51 @@
     <title> Bookmarklets </title>
 <style>
     
+    body {
+        background-color: darkcyan;
+    }
+
+    button {
+        background-color: darkmagenta;
+        color: orangered;
+        padding:10px;
+        min-height: 1px; 
+        min-width: 1px;
+        height: 100px;
+        width: 150px;
+   
+        font-size: 20px;
+        font-family: "Rowdies-Regular.ttf"; 
+        
+    }
+    button:hover {
+        background-color:orange;
+        transition: 0.0s;
+    }
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    a {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    h1 {
+        color: azure;
+        text-align: center;
+    }
 
 </style>
 </head>
 <body>
 
+    <h1> Simply Grab the bookmark you want and drop it on your bookmarks</h1>
+
+    <a href="javascript:var evl,em,expr=prompt('Formula... (eg: 2*3 + 7/8)','');with(Math)try{evl=  parseFloat(eval(expr));if(isNaN(evl)) {throw Error('Not a number!');}void(prompt ('Result:'  ,evl));}catch(em){alert(em);}"> Calculator</a>
 
 </body>
 </html>
